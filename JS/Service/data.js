@@ -1,0 +1,24 @@
+{
+	"Service": [
+		{
+			"name":"Sudhir",
+			"place":"Chennai"	
+		},
+		{
+			"name":"Gopal",
+			"place":"Chennai"	
+		},
+		{
+			"name":"Rahgu",
+			"place":"AP"	
+		},
+		{
+			"name":"Rahul",
+			"place":"Pune"	
+		},
+		{
+			"name":"Mohan",
+			"place":"Mumbai"	
+		}
+	]
+}
