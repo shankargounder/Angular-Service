@@ -1,9 +1,12 @@
 app.factory('getdata', ['$http', function($http){
-	return
-		$http.get('JS/Service/data.js').success(function(data){
+	return $http({
+		method: 'GET',
+		url:'http://localhost/Angular-Service/JS/Service/data.js'
+	}).then(function successCallback(data){
+			console.log(data);
 			return data;
-		}).error(function(err){
+		},function(err){
 			return err;
-		})
+		});
 	
 }])

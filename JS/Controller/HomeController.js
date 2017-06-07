@@ -1,7 +1,9 @@
-app.controller('HomeController', ['$scope', 'getdata' function($scope, getdata){
+app.controller('HomeController', ['$scope', 'getdata', function($scope, getdata){
 	console.log('HomeController');
-	getdata.success(function(data){
-		$scope.getData = data;
-		console.log($scope.getData);
+	getdata.then(function successCallback(res){
+		$scope.getData = res;
+		$scope.Name = res.data.Service[0].name;
+		$scope.Place = res.data.Service[0].place;
+		
 	})
 }])
